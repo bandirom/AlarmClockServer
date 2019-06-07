@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <link href="favicon.png" rel="shortcut icon" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="description" content="">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/raphaelicons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body onload="loadConfig();">
+    <header class="clearfix">
+        <div class="container">
+            <a id="logo" target="_blank" href="#">Alarm Clock</a>
+            <nav class="clearfix">
+                <ul role="navigation">
+                    <li>
+                        <a href="index.htm" class="activePage"><span class="icon"></span>Home</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="edit.htm"><span class="icon"></span>Редактор</a>
+                    </li>
+                    <li>
+                        <a href="setup.htm"><span class="icon"></span>Налаштування</a>
+                    </li>
+                    <li>
+                        <a href=\login?DISCONNECT =YES\"><span class="icon"></span>disconnect</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section role="banner">
+        <hgroup>
+            <h1>Налаштування</h1>
+            <h2></h2>
+        </hgroup>
+        <article role="main" class="clearfix">
+            <div class="post">           </div>
+        </article>
+    </section>
+    <section class="container">
+        <div class="columns">
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Перепрошивка модуля</h2>
+                        <form method='POST' action='/update' enctype='multipart/form-data'>
+                            <input type='file' name='update'>
+                            <p><input type='submit' value='Update'></p>
+                        </form>
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Перезавантаження модуля</h2>
+                        <input class="btn btn-block btn-warning" value="      Restart      " onclick="restart(this,'Вы действительно хотите перезагрузить устройство?');" type="submit">
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="columns">
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Ім'я пристрою</h2>
+                        <input id="ssdp" value="{{SSDP}}" class="form-control" pattern="[0-9a-zA-Zа-яА-Я. ]{1,20}" placeholder="Имя устройства">
+                        <input class="btn btn-block btn-success" value="Сохранить" onclick="set_ssdp(this);" type="submit">
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Підключення до WiFi</h2>
+                        <p><h3>Login</h3></p>
+                        <input id="ssid" value="{{ssid}}" class="form-control" pattern="[0-9a-zA-Z.]{1,15}" placeholder="Имя WiFi сети">
+                        <p><h3>Password</h3></p>
+                        <input id="password" value="{{password}}" pattern=".{8,15}" onfocus="this.type='text'" type="password" class="form-control" placeholder="Пароль">
+                        <input class="btn btn-block btn-success" value="Сохранить" onclick="set_ssid(this);" type="submit">
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Точка доступа</h2>
+                        <div class="col-sm-6">
+                            <p><h3>SSID</h3></p>    <input id="ssidap" value="{{ssidAP}}" class="form-control" pattern="[0-9a-zA-Z.]{1,15}" placeholder="Имя WiFi сети">
+                            <p><h3>Password</h3></p>  <input id="passwordAp" value="{{passwordAP}}" pattern=".{8,15}" onfocus="this.type='text'" type="password" class="form-control" placeholder="Пароль">
+                            <input class="btn btn-block btn-success" value="Сохранить" onclick="set_ssid_ap(this);" type="submit">
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+
+        </div>
+    </section>
+    <hr>
+    <footer role="contentinfo">
+        <p>
+            <span class="left">  Copyright 2019 bandirom. All rights reserved.</span>
+            <a href="index.htm">HOME</a> | | <a href="edit.htm">Редактор</a> |  <a href="setup.htm">Налаштування</a>
+        </p>
+    </footer>
+    <script src="assets/js/libs/modernizr-2.5.2.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+</body>
+</html>

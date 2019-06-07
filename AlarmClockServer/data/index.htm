@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <link href="favicon.png" rel="shortcut icon" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="description" content="">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="function.js"></script>
+
+</head>
+
+<body onload="loadInteractive();">
+    <header class="clearfix">
+        <div class="container">
+            <a id="logo" target="_blank" href="#">Alarm Clock</a>
+            <nav class="clearfix">
+                <ul role="navigation">
+                    <li>
+                        <a href="index.htm"><span class="icon"></span>Home</a>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="edit.htm"><span class="icon"></span>Редактор</a>
+                    </li>
+                    <li>
+                        <a href="setup.htm"><span class="icon"></span>Налаштування</a>
+                    </li>
+                    <li>
+                        <a href=\login?DISCONNECT =YES\"><span class="icon"></span>disconnect</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section role="banner">
+        <hgroup>
+            <h1>Alarm Clock</h1>
+            <h2></h2>
+        </hgroup>
+        <article role="main" class="clearfix">
+            <div class="post">
+                <a href="#" class="button left">Learn more <span class="icon">:</span></a>
+            </div>
+        </article>
+
+    </section>
+    <section class="container">
+        <div class="columns">
+            <article>
+                <figure>
+                    <h2>Current time: <strong id="time">{{time}}</strong><b>|</b>  {{date}}</h2>
+                    <input class="btn btn-block btn-primary" value="Синхронизировать время" onclick="load_time(this);" type="submit">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <h2>Time zone GMT</h2>
+                    <input id="timezone" value="{{timezone}}" pattern="[0-9]{1,3}" class="form-control">
+                    <input class="btn btn-block btn-success" value="Save" onclick="time_zone(this);" type="submit">
+                    <!--<input class="btn btn-block btn-primary" value="Авто определение и сохранение зоны" onclick="set_time_zone(this);" type="submit">-->
+                </figure>
+            </article>
+        </div>
+        <div class="columns">
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>Rele Control</h2>
+                        <input onclick="sendbutton(1)" value="Rele on" name="rele on" type="submit">
+                        <input onclick="sendbutton(0)" value="Rele off" name="rele off" type="submit">
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <fieldset>
+                        <h2>Alarm clock {{CurAlarmClockSet}}</h2>
+                        <p><input id="AlarmTime" type="time" name="selected_time" list="time-list"></p>
+                        <p><input id="AlarmDate" type="date" name="selected_time" list="time-list"></p>
+                        <datalist id="time-list">
+                            <option value="08:00" label="Начало рабочего дня">
+                            <option value="12:00" label="Обед">
+                            <option value="17:00" label="Конец рабочего дня">
+                        </datalist>
+
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <p> <input type="radio" id="Once" name="Once"><label for="Once"> Once</label></p>
+                            <p> <input type="radio" id="EveryDay" name="EveryDay"><label for="EveryDay"> Every Day</label></p>
+                            <p> <input type="radio" id="Everyweek" name="Everyweek"><label for="Everyweek"> Every week</label></p>
+                        </div>
+                    </fieldset>
+
+                </figure>
+                <p><input class="btn btn-block btn-success" value="Сохранить" onclick="SetAlarmTime(this);" type="submit"></p>
+            </article>
+            <article>
+                <figure>
+                    <fieldset>
+                        <h2>Shift (Jabil): {{shift}}</h2>
+                        <p><input name="shift" type="radio" value="A"> A</p>
+                        <p><input name="shift" type="radio" value="B"> B</p>
+                        <p><input name="shift" type="radio" value="C"> C</p>
+                        <p><input name="shift" type="radio" value="D"> D</p>
+                    </fieldset>
+                </figure>
+                <p><input onclick="ShiftChoice(this)" type="submit" value="Choice"></p>
+            </article>
+
+
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <p>
+            <span class="left">  Copyright 2019 bandirom. All rights reserved.</span>
+            <a href="index.htm">HOME</a> | | <a href="edit.htm">Редактор</a> |  <a href="setup.htm">Налаштування</a> |
+        </p>
+    </footer>
+
+</body>
+</html>

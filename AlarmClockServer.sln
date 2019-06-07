@@ -3,9 +3,81 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ESP8266", "ESP8266", "{88155D43-5628-4224-84D7-595CF706568D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\FS.ino = ..\..\..\Desktop\SmartAlarmClock\FS.ino
+		..\..\..\Desktop\SmartAlarmClock\http.ino = ..\..\..\Desktop\SmartAlarmClock\http.ino
+		..\..\..\Desktop\SmartAlarmClock\index.h = ..\..\..\Desktop\SmartAlarmClock\index.h
+		..\..\..\Desktop\SmartAlarmClock\NTPClient.cpp = ..\..\..\Desktop\SmartAlarmClock\NTPClient.cpp
+		..\..\..\Desktop\SmartAlarmClock\NTPClient.h = ..\..\..\Desktop\SmartAlarmClock\NTPClient.h
+		..\..\..\Desktop\SmartAlarmClock\setup.cpp = ..\..\..\Desktop\SmartAlarmClock\setup.cpp
+		..\..\..\Desktop\SmartAlarmClock\setup.h = ..\..\..\Desktop\SmartAlarmClock\setup.h
+		..\..\..\Desktop\SmartAlarmClock\SmartAlarmClock.ino = ..\..\..\Desktop\SmartAlarmClock\SmartAlarmClock.ino
+		..\..\..\Desktop\SmartAlarmClock\Time.ino = ..\..\..\Desktop\SmartAlarmClock\Time.ino
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{E3EE1DE7-64A7-47A3-A79D-41D2EDCC286A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\404.html = ..\..\..\Desktop\SmartAlarmClock\data\404.html
+		..\..\..\Desktop\SmartAlarmClock\data\edit.htm.gz = ..\..\..\Desktop\SmartAlarmClock\data\edit.htm.gz
+		..\..\..\Desktop\SmartAlarmClock\data\favicon.png = ..\..\..\Desktop\SmartAlarmClock\data\favicon.png
+		..\..\..\Desktop\SmartAlarmClock\data\function.js = ..\..\..\Desktop\SmartAlarmClock\data\function.js
+		..\..\..\Desktop\SmartAlarmClock\data\index.htm = ..\..\..\Desktop\SmartAlarmClock\data\index.htm
+		..\..\..\Desktop\SmartAlarmClock\data\login.htm = ..\..\..\Desktop\SmartAlarmClock\data\login.htm
+		..\..\..\Desktop\SmartAlarmClock\data\setup.htm = ..\..\..\Desktop\SmartAlarmClock\data\setup.htm
+		..\..\..\Desktop\SmartAlarmClock\data\style.css = ..\..\..\Desktop\SmartAlarmClock\data\style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{8CA3C884-FA05-4612-A53A-11B26B486169}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{3C819A2D-EBA7-461E-9791-3706A552EB2E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\assets\js\script.js = ..\..\..\Desktop\SmartAlarmClock\data\assets\js\script.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{75CAA4E5-4F46-4697-9A25-9DA64C20BB99}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\assets\css\ie-fixes.less = ..\..\..\Desktop\SmartAlarmClock\data\assets\css\ie-fixes.less
+		..\..\..\Desktop\SmartAlarmClock\data\assets\css\main.css = ..\..\..\Desktop\SmartAlarmClock\data\assets\css\main.css
+		..\..\..\Desktop\SmartAlarmClock\data\assets\css\main.less = ..\..\..\Desktop\SmartAlarmClock\data\assets\css\main.less
+		..\..\..\Desktop\SmartAlarmClock\data\assets\css\responsive.less = ..\..\..\Desktop\SmartAlarmClock\data\assets\css\responsive.less
+		..\..\..\Desktop\SmartAlarmClock\data\assets\css\style.css = ..\..\..\Desktop\SmartAlarmClock\data\assets\css\style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{833AE46B-0171-49D9-974E-5ECACBFAFF34}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\assets\images\black.png = ..\..\..\Desktop\SmartAlarmClock\data\assets\images\black.png
+		..\..\..\Desktop\SmartAlarmClock\data\assets\images\light.png = ..\..\..\Desktop\SmartAlarmClock\data\assets\images\light.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{A2E136CE-80C8-4534-B93D-9BA9BF1B244E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\license.txt = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\license.txt
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.eot = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.eot
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.svg = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.svg
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.ttf = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.ttf
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.woff = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons-webfont.woff
+		..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons.css = ..\..\..\Desktop\SmartAlarmClock\data\assets\fonts\raphaelicons.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{AF74E067-BB56-44E5-9475-0C1CF59E82CF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SmartAlarmClock\data\assets\js\libs\jquery-1.7.1.min.js = ..\..\..\Desktop\SmartAlarmClock\data\assets\js\libs\jquery-1.7.1.min.js
+		..\..\..\Desktop\SmartAlarmClock\data\assets\js\libs\modernizr-2.5.2.min.js = ..\..\..\Desktop\SmartAlarmClock\data\assets\js\libs\modernizr-2.5.2.min.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3EE1DE7-64A7-47A3-A79D-41D2EDCC286A} = {88155D43-5628-4224-84D7-595CF706568D}
+		{8CA3C884-FA05-4612-A53A-11B26B486169} = {E3EE1DE7-64A7-47A3-A79D-41D2EDCC286A}
+		{3C819A2D-EBA7-461E-9791-3706A552EB2E} = {8CA3C884-FA05-4612-A53A-11B26B486169}
+		{75CAA4E5-4F46-4697-9A25-9DA64C20BB99} = {8CA3C884-FA05-4612-A53A-11B26B486169}
+		{833AE46B-0171-49D9-974E-5ECACBFAFF34} = {8CA3C884-FA05-4612-A53A-11B26B486169}
+		{A2E136CE-80C8-4534-B93D-9BA9BF1B244E} = {8CA3C884-FA05-4612-A53A-11B26B486169}
+		{AF74E067-BB56-44E5-9475-0C1CF59E82CF} = {3C819A2D-EBA7-461E-9791-3706A552EB2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1D11C0D-033A-445E-89ED-496A1ACFB66E}
